@@ -65,3 +65,84 @@ form input[type="button"]:hover {
 .output {
   margin-top: 20px;
 }
+
+
+@media only screen and (max-width: 500px) {
+  .card {
+    max-width: 100%;
+    transform: scale(1.2);
+    transform-origin: top center;
+    box-shadow: none;
+  }
+}
+
+/* Styles for the tweet input field */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the button */
+form input[type="button"] {
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="button"]:hover {
+  background-color: #0c8ae6;
+}
+
+/* Styles for the tweet output */
+.output {
+  margin-top: 20px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 500px) {
+  /* Rearrange the elements */
+  .ok {
+    margin-top: 10px;
+  }
+
+  form label {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  form input[type="text"] {
+    display: inline-block;
+    width: calc(100% - 130px);
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  form input[type="button"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  /* Adjust the card height */
+  .card {
+    height: calc(100vh - 90px);
+    overflow-y: scroll;
+    transform-origin: top center;
+    transform: scale(1.2);
+    padding: 10px;
+  }
+}
