@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Get Tweet through the link</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="ok"><img src="twitter_logo.png" alt="twitter_logo" width="30" height="30"> Get Tweet</h1>
+  <div class="card">
+    <form>
+      <label for="tweet-url">Enter Tweet URL:</label><br>
+      <input type="text" id="tweet-url" name="tweet-url"><br>
+      <input type="button" value="Generate Tweet" onclick="generateEmbedCode()">
+    </form>
+    <div class="output"></div>
+  </div>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
